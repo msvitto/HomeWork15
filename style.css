@@ -18,7 +18,7 @@
         url('fonts/GraphikLCG-Semibold.ttf') format('ttf');
     font-display: swap;
 }
-@media screen and (max-width:576px) {
+@media screen and (max-width:576px){
     body{
         font-family: 'GraphikLCG';
         overflow-x: hidden;
@@ -64,7 +64,7 @@ li{
 }
 .header{
     max-width: 1290px;
-    height: 100px;
+    min-height: 100px;
     display: flex;
     margin: 0 auto;
     align-items: center;
@@ -72,27 +72,27 @@ li{
 }
 .header-list{
     width: 740px;
-    height: 100px;
     align-items: center;
     display: flex;
     justify-content: space-around;
-    /* flex-wrap: wrap;  */
 }
 @media screen and (max-width: 576px){
     .header-list{
-        margin: 0 auto;
-        margin-top: 20px;
-        display: flex;
+        width: 576px;
     }
 }
 
 @media screen and (max-width: 576px){
     .header{
+        display: flex;
+        flex-wrap: wrap;
+        min-height: 130px;
     }
 }
 @media screen and (max-width: 576px){
     .header-btns{
-    display: block;
+        max-width: 190px;
+    
     }
 }
 .header-btns{
@@ -117,6 +117,11 @@ button{
         border: 1px solid;
     }
 }
+@media screen and (max-width:576px){
+    .container{
+        max-width: 576px;
+}
+}
 .try{
     background-color: #FF6336;
     color: white;
@@ -137,23 +142,65 @@ button{
     border-top: 1px solid #CCCCCC;
     max-width: 1290px;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    min-height: 860px;
+    /* flex-wrap: wrap; */
+    /* justify-content: space-between; */
+    /* min-height: 860px; */
     margin: 0 auto;
 }
+@media screen and (max-width:576px){
+    .wrapper{
+        max-width: 576px;
+        /* padding-left: 30px; */
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+
+@media screen and (max-width:576px){
+    .cnt-text{
+        padding-left: 10px;
+        min-width: 545px;
+    }
+}
+@media screen and (max-width:576px){
+    .free{
+        width: 100px;
+    }
+}
+@media screen and (max-width:576px){
+    .under-text{
+        padding-left: 10px;
+        /* margin: 0 auto; */
+}
+}
+
+
 .content{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    height: 610px;
-    padding-top: 129px;
+    /* height: 610px; */
+    padding-top: 70px;
 }
 .free{
     width: 160px;
     height: 60px; 
     color: white;
     background-color: #FF6336;   
+}
+@media screen and (max-width:576px){
+    .free{
+        width: 130px;
+    }
+}
+
+@media screen and (max-width:576px){
+    .btns{
+        padding-left: 10px;
+        max-width: 280px;
+        /* margin: 0 auto; */
+    }
 }
 .btns{
     width: 340px;
@@ -165,20 +212,28 @@ button{
     width: 160px;
     height: 60px;
 }
-@media screen and (max-width: 576px){
-    .cnt-item{
-        font-size: 30px;
+@media screen and (max-width:576px){
+    .book{
+        width: 130px;
     }
 }
 .cnt-item{
-    width: 552px;
+    max-width: 552px;
     font-size: 65px;
     font-weight: 600;
     line-height: 70px;
     padding-bottom: 51px;
 }
+@media screen and (max-width:576px){
+    .cnt-item{
+        max-width: 545px;
+
+        font-size: 45px;
+        padding-left: 10px;
+    }
+}
 .cnt-text{
-    width: 470px;
+    max-width: 470px;
     font-size: 25px;
     padding-bottom: 51px;
     line-height: 35px;
@@ -187,14 +242,29 @@ button{
 .under-text{
     font-size: 15px;
     padding-top: 25px;
-    
+    padding-bottom: 20px;
 }
 .pic{
     width: 738px;
     height: 529px;
-    padding-top: 151px;
+    padding-top: 51px;
+}
+@media screen and  (max-width:576px) {
+    .pic{
+    max-width: 546px;
+}
 }
 
+
+
+@media screen and (max-width:576px){
+    .brand{
+        display: flex;
+        flex-wrap: wrap;
+        width: 450px;
+        gap: 35px;
+    }
+}
 .bg-ye{
     height: 455px;
     background-color: #FF9C7D;
@@ -206,6 +276,12 @@ button{
     width: 720px;
     font-size: 50px;
     font-weight: 600;
+}
+@media screen and (max-width:576px){
+    .item-brand p{
+        font-size: 45px;
+        text-align: center;
+    }
 }
 .item-brand{
     display: flex; 
@@ -227,7 +303,6 @@ button{
     font-size: 50px;
     width: 379px;
     line-height:60px;
-  
 }
 
 .link{
@@ -245,7 +320,7 @@ p a{
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    padding-bottom: 100px;
+    /* padding-bottom: 100px; */
     max-width: 1290px;
     margin: 0 auto;
 }
@@ -269,8 +344,12 @@ p a{
 }
 .card-item{
     width: 500px;
-    padding-bottom: 30px;
-    
+    padding-bottom: 30px;   
+}
+@media screen and (max-width:576px) {
+    .card-item{
+        font-size: 45px;
+    }
 }
 .story{
     font-size: 20px;
@@ -278,7 +357,28 @@ p a{
     line-height: 30px;
     padding-bottom: 30px;
 }
-
+@media screen and (max-width:576px){
+    .cards{
+        padding-left: 10px; 
+        max-width: 536px;
+    }
+}
+@media screen and (max-width:576px){
+    .card-story{
+        /* padding-left: 30px; */
+        margin: 0 auto;
+    }
+}
+@media screen and (max-width:576px){
+.card-picture{
+    max-width: 536px;
+}
+}
+@media screen and (max-width:576px){
+    .card-picture img{
+        max-width: 536px;
+    }
+}
 .bg-lightye{
     margin: 0 auto;
     max-width: 100%;
@@ -287,12 +387,24 @@ p a{
     background-color: #FFF8E4;
     /* padding-bottom: 70px; */
 }
+
+@media screen and (max-width:576px) {
+    .block-icon{
+        margin: 0 auto;
+}
+}
 .item-icon{
     display: flex;
     justify-content: center;
     font-weight: 600;
     font-size: 50px;
 }  
+@media screen and (max-width:576px) {
+    .item-icon{
+        text-align: center;
+        font-size: 45px;
+    }
+}
 .block {
     display: flex;
     justify-content: space-between;
@@ -345,6 +457,22 @@ p a{
     text-align: center;
     
 }
+@media screen and (max-width:576px) {
+    .box-item{
+        max-width: 536px; 
+        font-size: 45px;     
+    }
+}
+@media screen and (max-width:576px) {
+    .box{
+        margin: 0 auto;
+    }
+}
+@media screen and (max-width:576px) {
+    .box img{
+        padding-left: 120px;
+    }
+}
 .boxs {
     display: flex;
     justify-content: space-between;
@@ -354,6 +482,12 @@ p a{
 .box {
     width: 410px;
 }
+@media screen and (max-width:576px) {
+    .box-list{
+        text-align: center;
+    }
+}
+    
 .box-img-1 {
     height: 201px;
     width: 145px;
@@ -388,15 +522,18 @@ p a{
     text-decoration: underline;
 }
 
+
+
 .bg-bl{
     max-width: 100%;
-    
-    background-color: #C9E8F2;
-    
-    height: 470px;
-    
-    
-    
+    background-color: #C9E8F2;    
+    min-height: 470px;
+}
+@media screen and (max-width:576px) {
+    .bl{
+        flex-wrap: wrap;
+        padding-left: 20px;
+    }
 }
 .bl{
     max-width: 1290px;
@@ -406,10 +543,14 @@ p a{
 }
 .bl-text {
     font-size: 30px;
-    width: 920px;
+    max-width: 920px;
     line-height: 40px;
     padding-top: 63px;
-
+}
+@media screen and (max-width:576px) {
+    .bl-text{
+        font-size: 25px;
+    }
 }
 .bl-name {
     font-size: 15px;
@@ -421,10 +562,14 @@ p a{
     padding-top: 53px;
 }
 
+
+
+
+
 .bg-br{
     max-width: 100%;
     background-color: #DABC98;
-    height: 332px; 
+    min-height: 332px; 
 }
 .cake-text{
     display: flex;
@@ -438,17 +583,23 @@ p a{
     height: 100%;
     max-width: 1290px;
     flex-wrap: wrap;
+    padding-top: 70px;
 }
 .bg-br p{
     font-size: 35px;
     font-weight: 600;
     line-height: 50px;
-    width: 461px;
+    max-width: 461px;
 }
 .cake{
     width: 176px;
     height: 154px;
     padding-right: 67px;
+}
+@media screen and (max-width:576px) {
+    .cake{
+        padding-left: 20px;
+    }
 }
 .br-star{
     border-left: 1px solid #000;
@@ -458,21 +609,37 @@ p a{
     height: 168px;
 }
 
+
+
+
 .bird{
     max-width: 1290px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
     align-items: center;
-    min-height: 1100px;
+    max-height: 1100px;
     justify-content: center;
+    padding-bottom: 30px;
+}
+
+@media screen and (max-width:576px){
+    .btn-bird{
+        width: 160px;
+    }
 }
 .bird-item{
     font-size: 65px;
     font-weight: 600;
     line-height: 75px;
-    width: 791px;
+    max-width: 791px;
     text-align: center;
+}
+@media screen and (max-width:576px){
+    .bird-item{
+        font-size: 45px;
+        padding-top: 60px;
+    }
 }
 .bird-text{
     font-size: 25px;
@@ -480,10 +647,28 @@ p a{
     width: 539px;
     text-align: center;
     padding-bottom: 25px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+@media screen and (max-width:576px){
+    .bird-text{
+    max-width: 576px;
+}
+}
+@media screen and (max-width:576px){
+    .bird-img img{
+        max-width: 576px;
+        height: 245px;
+    }
+}
+@media screen and (max-width:576px) {
+    .bird{
+        max-width: 576px;
+    }
 }
 .bird-img img{
-    height: 445px;
-    width: 1023px;
+    max-height: 445px;
+    max-width: 1023px;
     padding-bottom: 32px;
 }
 .btn-bird{
@@ -514,6 +699,11 @@ p a{
     text-align: center;
     padding-bottom: 29px;
 }
+@media screen and (max-width:576px){
+    .peach-item{
+        font-size: 45px;
+    }
+}
 .peach-text {
     font-size: 20px;
     line-height: 30px;
@@ -535,6 +725,10 @@ button a{
     text-decoration: none;
     color: inherit;
 }
+
+
+
+
 
 .bg-footer {
     max-width: 1290px;
@@ -580,6 +774,28 @@ button a{
         font-size: 20px;
         font-weight: 600;
     }
+    @media screen and (max-width:576px){
+        .for-media{
+            padding-left: 20px;
+            padding-right: 100px;
+        }
+    }
+    @media screen and (max-width:576px){
+        .for-media-list{
+            width: 120px;
+            padding-top: 40px;
+        }
+    }
+    @media screen and (max-width:576px){
+        .for-media-list:first-child{
+            padding-left: 20px;
+        }
+    }
+    @media screen and (max-width:576px){
+        .for-media-list:last-child{
+            padding-right: 20px;
+        }
+    }
     .fr-list{
         font-size: 20px;
         font-weight: 600;
@@ -601,6 +817,11 @@ padding-bottom: 40px;
 padding-top: 50px;
 max-width: 1290px;
 }
+@media screen and (max-width:576px){
+    .ft-logo{
+        margin: 0 auto;
+    }
+}
 .ft-logo{
     display: flex;
     width: 411px;
@@ -618,7 +839,6 @@ max-width: 1290px;
     font-size: 12px;
     line-height: 15px;
 }
-
 
 
 
